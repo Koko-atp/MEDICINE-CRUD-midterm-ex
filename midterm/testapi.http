@@ -1,0 +1,30 @@
+###
+GET http://127.0.0.1:8787/medicine/all
+
+###
+GET http://127.0.0.1:8787/medicine/1
+###
+POST http://127.0.0.1:8787/medicine/create
+Content-Type: application/json
+
+{
+  "name": "para",
+  "type": "solid",
+  "price": 80,
+  "manufac": "rabbit Phama",
+  "exp": "2027-05-01"
+}
+
+###
+PUT http://127.0.0.1:8787/medicine/update/1
+Content-Type: application/json
+
+{
+  "name": "rabbit drink",
+  "manufac": "rabbit Phama",
+  "price" : 120,
+  "exp": "2028-11-02"
+}
+
+###
+DELETE http://127.0.0.1:8787/medicine/delete/6
